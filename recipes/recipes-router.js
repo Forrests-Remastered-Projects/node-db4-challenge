@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     .catch(err => {
       res
         .status(500)
-        .json({ message: "Failed to get Recipe", error: `${error}` });
+        .json({ message: "Failed to get Recipe", error: "sorry!" });
     });
 });
 
@@ -22,7 +22,7 @@ router.get("/:id/ingredients", (req, res) => {
     .catch(err => {
       res.status(500).json({
         message: "Failed to get Recipe Ingredients",
-        error: `${error}`
+        error: "sorry!"
       });
     });
 });
